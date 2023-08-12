@@ -67,7 +67,9 @@ class HomePage extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(25, 8, 25, 8),
                     child: Row(
                       children: [
-                        Image.asset( newsData[index]["image"] as String,),
+                        Image.asset(
+                          newsData[index]["image"] as String,
+                        ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                           child: Column(
@@ -98,6 +100,9 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 },
+              ),
+              const SizedBox(
+                height: 170,
               )
             ],
           ),
@@ -107,13 +112,12 @@ class HomePage extends StatelessWidget {
   }
 }
 
-
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Placeholder();
   }
 }
 
