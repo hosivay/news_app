@@ -16,7 +16,7 @@ class BookMarkPage extends StatelessWidget {
           physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
-              Appbar(showTitle: false),
+              Appbar(showTitle: false, appbarBookmark: true),
               bookmark_title(title: "Collections", fontWeight: FontWeight.bold),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -57,8 +57,7 @@ class BookMarkPage extends StatelessWidget {
                           onPressed: (context) {},
                           backgroundColor: Colors.grey.shade100,
                           foregroundColor: Colors.black,
-                          icon: CupertinoIcons.xmark_circle,  
-                          
+                          icon: CupertinoIcons.xmark_circle,
                           autoClose: true,
                           spacing: 50,
                         ),

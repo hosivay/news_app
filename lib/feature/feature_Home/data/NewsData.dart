@@ -1,7 +1,7 @@
 
 
 
-      var newsData = [
+      List<Map<String, String>> newsData = [
         {
           "image" : "lib/assets/News1.png",
           "title" :  "Insurtech startup PasarPolis gets \$54 million — Series B",

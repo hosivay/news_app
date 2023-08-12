@@ -39,24 +39,8 @@ class HomePage extends StatelessWidget {
                       ],
                     )),
               ),
-              const Padding(
-                padding: EdgeInsets.fromLTRB(35, 25, 35, 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Latest News",
-                      style: TextStyle(
-                        color: Colors.grey,
-                      ),
-                    ),
-                    Icon(
-                      CupertinoIcons.arrow_right_circle,
-                      size: 20,
-                      color: Colors.grey,
-                    )
-                  ],
-                ),
+              title_iconArrowRight(
+                title:  "Latest News"
               ),
               ListView.builder(
                 itemCount: 3,
@@ -110,16 +94,10 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
+
+  
 }
 
-class SearchPage extends StatelessWidget {
-  const SearchPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
 
 class NotificationPage extends StatelessWidget {
   const NotificationPage({super.key});
