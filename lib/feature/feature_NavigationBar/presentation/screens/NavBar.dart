@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:news_app/feature/feature_Home/presentation/screens/HomePage.dart';
 import 'package:news_app/feature/feature_NotificationPage/presentation/screens/NotificationPage.dart';
 import 'package:news_app/feature/feature_Search/presentation/screens/SearchPage.dart';
+import 'package:news_app/feature/feature_Settings/presentation/screens/SettingsPage.dart';
 import 'package:news_app/feature/feature_bookmark/presentation/screens/BookmarkPage.dart';
 
 class NavPage extends StatefulWidget {
