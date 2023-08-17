@@ -152,7 +152,8 @@ Widget title_iconArrowRight(
     {required String title,
     double? fontSize = 14,
     Color? color = Colors.grey,
-    FontWeight? fontWeight = FontWeight.normal
+    FontWeight? fontWeight = FontWeight.normal,
+    bool? hideArrowIcon = false
     }) {
   return Padding(
     padding: const EdgeInsets.fromLTRB(35, 25, 35, 10),
@@ -163,10 +164,13 @@ Widget title_iconArrowRight(
           title,
           style: TextStyle(color: color, fontSize: fontSize,fontWeight: fontWeight),
         ),
-        const Icon(
-          CupertinoIcons.arrow_right_circle,
-          size: 20,
-          color: Colors.grey,
+        Visibility(
+          visible: !hideArrowIcon!,
+          child: const Icon(
+            CupertinoIcons.arrow_right_circle,
+            size: 20,
+            color: Colors.grey,
+          ),
         )
       ],
     ),

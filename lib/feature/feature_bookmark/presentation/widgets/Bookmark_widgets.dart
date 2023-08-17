@@ -44,12 +44,13 @@ Widget bookmark_title(
     {
       required String title,
       FontWeight? fontWeight = FontWeight.normal,
-       double? fontSize = 37
+       double? fontSize = 37,
+       double? paddingLeft = 32
        }) {
   return Row(
     children: [
       Padding(
-        padding: const EdgeInsets.only(left: 32, top: 8),
+        padding: EdgeInsets.only(left: paddingLeft!, top: 8),
         child: Text(
          title,
           style: TextStyle(fontSize: fontSize, fontWeight: fontWeight),

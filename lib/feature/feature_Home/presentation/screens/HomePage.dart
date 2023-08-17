@@ -99,14 +99,7 @@ class HomePage extends StatelessWidget {
 }
 
 
-class NotificationPage extends StatelessWidget {
-  const NotificationPage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold();
-  }
-}
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
