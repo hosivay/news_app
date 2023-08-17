@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 Widget settingsItem(
     {required String icon, required String title, required String subtitle}) {
   return Padding(
-    padding: const EdgeInsets.only(top: 7,bottom: 7),
+    padding: const EdgeInsets.only(top: 7, bottom: 7),
     child: Row(
       children: [
         Padding(
@@ -26,7 +26,8 @@ Widget settingsItem(
             children: [
               Text(
                 title,
-                style: const TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+                style:
+                    const TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
               ),
               const SizedBox(
                 height: 5,
